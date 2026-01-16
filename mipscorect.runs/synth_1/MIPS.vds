@@ -1,0 +1,396 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Mar 23 23:26:47 2025
+# Process ID: 17676
+# Current directory: D:/AC2/mipscorect/mipscorect.runs/synth_1
+# Command line: vivado.exe -log MIPS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+# Log file: D:/AC2/mipscorect/mipscorect.runs/synth_1/MIPS.vds
+# Journal file: D:/AC2/mipscorect/mipscorect.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MIPS.tcl -notrace
+Command: synth_design -top MIPS -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 278.379 ; gain = 68.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPS' [D:/AC2/mipscorect/mipscorect.srcs/sources_1/new/MIPS.vhd:42]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/MPG.vhd:5' bound to instance 'c1' of component 'MPG' [D:/AC2/mipscorect/mipscorect.srcs/sources_1/new/MIPS.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'MPG' [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/MPG.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (1#1) [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/MPG.vhd:11]
+INFO: [Synth 8-3491] module 'SSD' declared at 'D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/SSD.vhd:14' bound to instance 'c2' of component 'SSD' [D:/AC2/mipscorect/mipscorect.srcs/sources_1/new/MIPS.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'SSD' [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/SSD.vhd:21]
+INFO: [Synth 8-226] default block is never used [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/SSD.vhd:40]
+INFO: [Synth 8-226] default block is never used [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/SSD.vhd:55]
+INFO: [Synth 8-226] default block is never used [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/SSD.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (2#1) [D:/AC2/mipscorect/mipscorect.srcs/sources_1/imports/AC2/SSD.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (3#1) [D:/AC2/mipscorect/mipscorect.srcs/sources_1/new/MIPS.vhd:42]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[4]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[3]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[2]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 315.680 ; gain = 105.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 315.680 ; gain = 105.598
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/AC2/mipscorect/mipscorect.srcs/constrs_1/imports/AC2/NexysA7_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 618.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MIPS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 1     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[4]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[3]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[2]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     9|
+|3     |LUT1   |    34|
+|4     |LUT2   |     4|
+|5     |LUT3   |     9|
+|6     |LUT4   |    10|
+|7     |LUT5   |     5|
+|8     |LUT6   |    10|
+|9     |FDRE   |    46|
+|10    |IBUF   |     2|
+|11    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   145|
+|2     |  c1     |MPG    |    44|
+|3     |  c2     |SSD    |    66|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 618.684 ; gain = 105.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 618.684 ; gain = 408.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 40 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 618.684 ; gain = 408.602
+INFO: [Common 17-1381] The checkpoint 'D:/AC2/mipscorect/mipscorect.runs/synth_1/MIPS.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 618.684 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 23 23:27:08 2025...
