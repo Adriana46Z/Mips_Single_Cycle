@@ -37,9 +37,6 @@ A simplified MIPS32 single-cycle processor implemented in VHDL. The design cover
 | Design & Synthesis Tool | Xilinx Vivado |
 | Target Platform | FPGA development board |
 | Project Format | Vivado project (.xpr) |
-
-Language breakdown: VHDL (8.4%), Tcl (27%), HTML (34.7%), JavaScript (21.9%), Shell (7%), Batchfile (0.6%), Pascal (0.4%)
-
 ---
 
 ## Implemented Instructions
